@@ -1,0 +1,112 @@
+/* Ogólne resetowanie marginesów i paddingu */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Ustawienia dla całego dokumentu */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9; /* Jasne tło */
+    color: #333; /* Ciemny kolor tekstu */
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #333; /* Ciemne tło navbar */
+    padding: 10px 20px;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo a {
+    font-size: 1.8em;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar-menu {
+    list-style-type: none;
+    display: flex;
+}
+
+.navbar-menu li {
+    margin-left: 20px;
+}
+
+.navbar-menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.navbar-menu li a:hover {
+    color: #f39c12; /* Złoty kolor przy najechaniu */
+}
+
+/* Sekcja główna */
+main {
+    padding: 20px;
+}
+
+.section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+/* Stopka */
+footer {
+    background-color: #333; /* Ciemne tło stopki */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+/* Responsywność - mobilne widoki */
+@media screen and (max-width: 768px) {
+    .navbar-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar-menu {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .navbar-menu li {
+        margin: 10px 0;
+    }
+}
